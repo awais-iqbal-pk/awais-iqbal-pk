@@ -6,7 +6,7 @@
 📍 Based in Pakistan | Open to Internships & Freelance Work  
 
 ### 🏆 Featured Certification
-[![Generative AI Certificate](certificate.png)](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F99136108-0c3e-4fac-9580-2255eb664c42&urlhash=djT1&mt=jRuGkbKia3KJjw17XiPFUvOxNpxQsQH8_yyibHOmfobjPfGNiE6QqBxtJOpUOnz4ROcPfObqSecCGkQHacBydSI_XNaE&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BpCG53lkBT5q9FZpKwjxsQw%3D%3D)
+[![Generative AI Certificate](certificate.png)](https://credsverse.com/credentials/99136108-0c3e-4fac-9580-2255eb664c42)
 
 ---
 
