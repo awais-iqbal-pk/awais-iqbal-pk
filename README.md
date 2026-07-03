@@ -7,6 +7,7 @@
 
 ### 🏆 Featured Certification
 
+
 [![Generative AI Certificate](Certificate.png)](https://credsverse.com/credentials/99136108-0c3e-4fac-9580-2255eb664c42)
 
 ---
