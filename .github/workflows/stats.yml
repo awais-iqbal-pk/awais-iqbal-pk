@@ -1,0 +1,69 @@
+name: Update Stats Cards
+
+on:
+  schedule:
+    - cron: "30 0 * * *" # runs daily, offset from the snake workflow
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/stats.yml"
+
+permissions:
+  contents: write
+
+env:
+  THEME: bg_color=0F2027&title_color=00C9A7&icon_color=2C5364&text_color=C9D1D9&border_color=30363D
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&rank_icon=github&${{ env.THEME }}
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&${{ env.THEME }}
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Sehat AI pin
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=-SehatAIV2&${{ env.THEME }}
+          path: profile/pin-sehat-ai.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Webcam Object Detection pin
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=webcam-object-detection&${{ env.THEME }}
+          path: profile/pin-webcam-detection.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Refresh trophies SVG
+        run: |
+          curl -fsSL "https://trophy.ryglcloud.net/?username=${{ github.repository_owner }}&theme=onedark&no-frame=true&column=-1&margin-w=15&margin-h=15&title=Commits,Repositories,Followers,Experience" \
+            -o profile/trophies.svg
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README stats cards" || exit 0
+          git push
