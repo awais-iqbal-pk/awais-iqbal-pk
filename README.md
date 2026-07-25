@@ -6,7 +6,7 @@
 <!-- ══════════════════════ TYPING ANIMATION ══════════════════════ -->
 <div align="center">
   <a href="https://github.com/awais-iqbal-pk">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=23&duration=2600&pause=900&color=00C9A7&center=true&vCenter=true&width=720&lines=Building+AI-Powered+Products+End+to+End+%F0%9F%9A%80;React+%E2%80%A2+Node.js+%E2%80%A2+FastAPI+%E2%80%A2+Python;Integrating+OpenAI+%2B+Gemini+into+Production+Systems+%F0%9F%A4%96;Final-Year+CS+Student+%40+UET+Lahore" alt="typing animation"/>
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=23&duration=2600&pause=900&color=00C9A7&center=true&vCenter=true&width=720&lines=Building+AI-Powered+Products+End+to+End+%F0%9F%9A%80;React+%E2%80%A2+Node.js+%E2%80%A2+FastAPI+%E2%80%A2+Python;Integrating+OpenAI+Gemini+into+Production+Systems+%F0%9F%A4%96;Final-Year+CS+Student+%40+UET+Lahore" alt="typing animation"/>
   </a>
 </div>
 
@@ -14,7 +14,7 @@
 
 <!-- ══════════════════════ PROFILE IMAGE ══════════════════════ -->
 <div align="center">
-  <img src="./assets/ChatGPT%20Image%20Jul%201%2C%202026%2C%2004_52_30%20PM.png" width="180" style="border-radius: 50%;" alt="Awais Iqbal"/>
+  <img src="./assets/image2.jpeg" width="180" style="border-radius: 50%;" alt="Awais Iqbal"/>
 </div>
 
 <br/>
